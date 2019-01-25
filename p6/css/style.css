@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color:deeppink; 
+}
+header h1{
+    position: relative;
+    min-width: 380px;/*Como adaptarlo al contenido?*/
+    width: 80%;
+    left: 10%;
+    top:25%;
+    padding: 5px;
+    padding-left:30%; 
+    background-color: white;
+    color: red;
+    font-size: 1em;
+}
+main{ 
+    position: relative;
+    bottom: 2%;
+    height: 74%;
+    background-color: grey;
+}
+form{
+    position: relative;
+    background-color:rgba(20, 194, 200, 0.8);
+    height: 90%;
+    width: 80%;
+    top: 5%;
+    padding: 15px;
+    min-width: 650px;
+    min-height: 370px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+form #busqueda {
+   margin-left: 35%;
+   height: 30px;
+   width: 300px;
+   padding: 2px;
+}
+
+form #busqueda #textoBusqueda{
+    margin-left: 10%;
+    width: 100px;
+}
+
+form #busqueda #botonBusqueda{
+    margin-left: 10%;
+    width: 50px;
+}
+form h2{
+    width: 80%;
+    background-color:white;
+    color:red;
+    border: 1px red solid;
+    margin-left:10%;
+    margin-bottom:10px; 
+    font-size: 1em;
+    padding: 1% 1% 1% 30%;
+}
+form div #copias{
+    width: 70px;
+}
+footer{  
+    height: 12%;
+    background-color: gold;
+    text-align: center;
+}
+/*Validez de los patterns*/
+form *[pattern]:invalid{
+    background-color: red; 
+}
+form *[pattern]:valid{
+   background-color: green;
+}
+/*Distincion de los requeridos*/
+form *[required=required]{
+    border: 3px solid red;
+}
+form *:optional{
+    border: 3px solid green;
+}
+
+form div #copias:out-of-range{
+   box-shadow:5px 10px #43e5f7;
+}
+* [pattern]:after{/*No va jaja*/
+    border: 1px dashed black;
+    background-color: rgba(20, 194, 200, 0.8);
+    content: "Fíjate en lo que escribes";
+}
+*:required::after{/*No va jaja*/
+    border: 1px dashed black;
+    background-color: rgba(20, 194, 200, 0.8);
+    content:"Obligatorio";
+}

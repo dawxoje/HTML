@@ -1,0 +1,75 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>¿Cuanto sabes?</title>
+</head>
+<body>
+    <header>
+        <h1>Daw: Lenguaje de Marcas</h1>
+    </header>
+    <main>
+        <form action="http://www.formular-chef.com/Formular-Chef.cgi" method="post" autocomplete="on">
+            <input type="hidden" name="recipiente" value="dawxoje@gmail.com">  
+            <fieldset id="busqueda">
+                <input type="search" name="haBuscado"  id="textoBusqueda"><input type="button" id="botonBusqueda" value="search">
+            </fieldset>
+            <h2>Inscripció</h2>
+            <div>
+                <label for="nom">El meu nom és</label>:<input type="text" name="nombre" id="nom" required="required" autofocus>
+            </div>
+            <div>
+                
+                <label for="email">La meua adreça de correu electronic és</label>:<input type="email" name="correo" id="email" required="required" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" multiple>
+            </div>
+            <div>
+                <label for="telefono">El meu telefon és</label>:<input type="tel" name="telefono" id="telefono" placeholder="965.639.695" pattern="^[6-9]{1,1}[0-9]{2,2}\.[0-9]{3,3}\.[0-9]{3,3}\.$" maxlength="12" minlength="11">
+            </div>
+            <div>
+                <label for="webSite">El meu lloc web es troba a</label>:<input type="url" name="dominio" id="webSite" placeholder="http://example.com" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$">
+            </div>
+            <div>
+                <label for="pass">Contrasenya:</label>
+                <br>(com a mínim 6 caràcters, sense espais)
+                <input name="contrasenya"type="password"id="pass" required="required" minlength="5" autocomplete="off">
+            </div>
+            <div>
+                <label for="lvlH5">En una escala de l'1 al 10, el meu coneixement de HTML5 és:</label> <input type="range" name="nivelHTML" id="lvlH5" min="1" max="10" step="1">
+            </div>
+            <div>
+                <label for="fecha">Per favor, iniciar la meua subcripció:</label><input type="date" id="fecha" required="required" min="2015-01-01" pattern="^(([0-2]\d|[3][0-1])\/([0]\d|[1][0-2])\/[2][0]\d{2})$"><!--No se dejar el año en una cifra fija-->
+            </div>
+            <div>
+                <label for="copias">M'agradaria rebre<input type="number" id="copias" max="9999" min="1">copies del Periòdic HTML5</label>
+            </div>
+            <div>
+                <label for="bloqueado">Comentari Deshabilitat</label><input type="text" disabled id="bloqueado">
+            </div>
+            <div>
+                <label for="titulo">Títol de l'article</label><input type="text" placeholder="HTML5" id="titulo" readonly>
+            </div>
+            <div>
+                <label for="fcolor">Color favorit</label><input type="color"><input type="text" list="posiblesColores" id="fcolor"name="favcolor" placeholder="#FFFFFF" pattern="#(?:[0-9A-Fa-f]{6>}|[0-9A-Fa-f]{3})">
+                <datalist id="posiblesColores"><!--No se sincronizar el input color y text-->
+                    <option value="#ff0000">
+                    <option value="#00ff00">
+                    <option value="#0000ff">
+                </datalist>
+                
+            </div>
+            <div>
+                <label for="newLetters">També em vull subscriure en El diari de CSS3</label><input type="checkbox" id="newLetters">
+            </div>
+            <input type="submit" value="Enviar Missatge">
+        </form>
+    </main>
+    <footer>
+        <small>Drets Reservats 2018_19 IES Pere Maria Orts</small>
+        <p>Benidorm.</p>
+        <p>2019</p>
+        <a href="#">IES Pere Maria Orts</a>        
+    </footer>
+</body>
+</html>

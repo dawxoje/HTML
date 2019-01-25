@@ -1,0 +1,73 @@
+
+
+#titulo{
+    text-shadow: 5px 5px 3px rgba(50, 50, 50, 0.5);
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;    
+    left: 50%;
+    margin: 3em 0 0 -189px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    box-shadow: 7px 3px 3px hsl(300, 100%, 40%);
+    background-image: -webkit-linear-gradient(right, hsla(300, 100%, 70%, 0.366),hsla(300, 100%, 60%, 0.336)),url('../img/clockFace.png') ;
+    background-image: -moz-linear-gradient(right, hsla(300, 100%, 70%, 0.366),hsla(300, 100%, 60%, 0.336)),url('../img/clockFace.png') ;   
+    background-image: linear-gradient(right, hsla(300, 100%, 70%, 0.366),hsla(300, 100%, 60%, 0.336)),url('../img/clockFace.png') ;  
+}
+
+#clock div {
+    position: absolute;
+    
+}
+
+
+#experiment{
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+    padding: 2px;
+    text-align: center;
+
+}
+
+#titulo{
+ font: bold 30px verdana, sans-serif;
+ 
+}
+
+/****Funciona pero...**/
+main{
+    position: relative;
+    display: inline-block;
+    height: 600px;
+    width: 70%;
+    margin: 5% 15%;
+    
+    background: -webkit-radial-gradient(center, circle,hsl(105, 100%, 60%), hsl(105, 100%, 30%));
+    background: -moz-radial-gradient(center, circle,hsl(105, 100%, 60%), hsl(105, 100%, 30%));
+    background: radial-gradient(center, circle,hsl(105, 100%, 60%), hsl(105, 100%, 30%));
+
+}
+
+#clock>div:nth-child(3n):hover{
+
+    transform: rotate(108000deg);
+    -moz-transform: rotate(108000deg);
+    -webkit-transform: rotate(108000deg);
+
+    transition-property: transform;
+    -moz-transition-property: transform;
+    -webkit-transition-property: transform;
+    
+    transition-duration:300s;
+    -moz-transition-duration:300s;
+    -webkit-transition-duration:300s;
+
+    transition-timing-function:linear;
+    -moz-transition-timing-function:linear;
+    -moz-transition-timing-function:linear;   
+}
