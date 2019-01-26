@@ -1,0 +1,23 @@
+body{
+   
+    background-image: url(../img/bg-imagen.svg);
+    background-color: aqua;
+}
+
+#arriba{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#arriba h1{
+    color:blue;
+}
+#arriba h3{
+    color:green;
+}
+#centro{
+    text-align: justify;
+}
+#abajo{
+    font-size: 20px;
+    font-family: Consolas, monaco, monospace;
+}

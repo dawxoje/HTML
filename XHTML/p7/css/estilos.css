@@ -1,0 +1,59 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#cajagrande{
+    background-color: plum;
+    border:2px solid orange;
+    padding: 20px;
+}
+#cajagrande *:nth-child(2n), #centro p:nth-child(2n){
+    margin: 20px 0;
+}
+#arriba{
+    text-align: center;
+    background-color: white;
+    position: relative;
+    height: 300px;
+    width: 80%;
+    margin-left: 9%;
+}
+#arriba h1{
+    color:blue;
+}
+#arriba h1+h3{
+    color:red;
+}
+#arriba img{
+    height: 150px;
+    width: 250px;
+}
+#centro{
+    background-color: gray;
+}
+
+#centro p::first-letter{
+    font-size: 30px;
+}
+#abajo{
+    padding: 15px;
+    border: 3px dashed black;
+    background-color:yellow;
+    position: relative;
+    width: 50%;
+}
+#abajo a{
+    text-decoration: none;
+}
+#abajo a:hover{
+    color: green;
+    text-decoration: underline;
+}
+#abajo table{
+    justify-content: center;
+    position: relative;
+    margin-left: 40%;
+    background-color: black;
+    color: white;
+}

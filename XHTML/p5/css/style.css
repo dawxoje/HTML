@@ -1,0 +1,16 @@
+#header{
+    background-color:gold;    
+}
+#header h1{
+    color:red;
+}
+#texto{
+    background-color: grey;
+}
+#tabla{
+    background-color: cyan;
+}
+#lista{
+    background-color: pink;
+    color:blue;
+}
