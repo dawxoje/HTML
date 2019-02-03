@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC 
+"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head>
+        <title>Jose Vilches Sanchez</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	</head>
+    <body>
+    	<input type="hidden" id=”recipient” name="recipient" value="dawxoje@gmail.com" />
+    	<form id="f1" method=”post” action=”http://www.formularchef.com/Formular-Chef.cgi”">
+			<fieldset id="datosForm" class="formSection">
+				<legend class="centradoForm">Formulario</legend>						
+				<div id="nombreBox" class="formBox">
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" name="nombre" size="30" maxlength="30"/>
+				</div>
+				<fieldset id="tipoPcBox" class="formSection">
+					<legend id="tipoPc">¿Qué tipo de ordenador tienes?</legend>
+					<input type="checkbox" id="tipoPcTorre" name="tipoPc" value="Torre">
+					<label for="tipoPcTorre">Sobremesa</label>
+					<br>
+					<input type="checkbox" name="tipoPcLaptop" value="Laptop">
+					<label for="tipoPcLaptop">Portatil</label>
+				</fieldset>
+				<label for="lugar_estudio">¿Estudiás en casa?</label>
+				<select id=lugar_estudio name="Estudiar">
+					<option value="Siempre" selected="selected">Siempre, a diario</option>
+					<option value="Bastante">Bastantes veces</option>
+					<option value="Algun">Algunos dias</option>
+					<option value="Nunca">Ni aunque me paguen</option>    		
+				</select>
+				<br>
+				<label for="passwordText">Elige un nuevo password:</label>
+				<input type="password" id="passwordText" name="contraseña" size="10"/>
+				<br>
+				<label for="imagePerfil">Añade una foto:</label>
+				<input type="file" id="imagePerfil" name="imaagenDePerfil" size="100"/>
+				<fieldset id="newsletter">
+					<legend>¿Quieres recibir publicidad?</legend>
+					<div id="opciones">						
+						<input type="radio" id="false" name="newsletter" value="false">
+						<label for="false">No</label>
+						<input type="radio" id="true" name="newsletter" value="true" checked="checked">
+						<label for="true">Si</label>
+					</div>
+				</fieldset>
+				<fieldset id="feedBack">
+					<label for="tArea">Añade lo que creas conveniente:</label>
+					<textarea id="tArea" name="tArea" rows="5" cols="20">
+					</textarea>  
+				</fieldset>				  		
+    			<input type="reset" id="reset" value="Vaciar el formulario"/>
+    			<input type="submit" id="submit" value="ENVIAR"/>
+				<p>(No olvides la <a href="#p1">contraseña</a>)</p>
+			</fieldset>    		
+    	</form>
+    </body>
+</html>

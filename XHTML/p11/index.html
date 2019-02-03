@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head>
+        <title>Jose Vilches Sanchez</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+    	<input type="hidden" id=”recipient” name="recipient" value="dawxoje@gmail.com" />
+    	<h1>Formulario</h1>
+    	<form id="f1" method=”post” action=”http://www.formularchef.com/Formular-Chef.cgi”>
+    		Nombre:<input type="text" name="nombre" size="20" maxLength=”30”>
+    		</br>
+    		¿Qué tipo de ordenador tienes?
+    		</br>
+    		<input type="checkbox" name="tipoPc" value="Torre">Sobremesa
+    		</br>
+    		<input type="checkbox" name="tipoPc" value="Laptop">Portatil
+    		</br>
+    		¿Estudiás en casa?<select id=lugar_estudio name="Estudiar">
+    			<option value="Siempre" selected="selected">Siempre, a diario</option>
+    			<option value="Bastante">Bastantes veces</option>
+    			<option value="Algun">Algunos dias</option>
+    			<option value="Nunca">Ni aunque me paguen</option>    		
+    		</select>
+    		</br>
+    		Elige un nuevo password:<input type="password" id="p1" name=”contrasenya” size=”10” />
+    		</br>
+    		Añade una foto:<input type="file" name="foto" size="100">
+    		</br>
+    		¿Quieres recibir publicidad?<input type="radio" name="newsletter" value="true" checked="checked"/>Si
+			<input type="radio" name="newsletter" name="newsletter" value="false"/>No
+			</br>
+    		Añade lo que creas conveniente:
+    		</br>
+    		<textarea id="tArea" name="tArea" rows="5" cols="20">
+    		</textarea>
+    		</br>
+    		<input type="reset" id="reset" value="Reset" />
+    		<input type="submit" id="submit" value="Enviar"/>
+    		</br>
+    		(No olvides la <a href="#p1">contraseña</a>)
+    	</form>
+    </body>
+</html>

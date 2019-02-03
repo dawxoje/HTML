@@ -1,0 +1,183 @@
+* {
+	font-family: "arial", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    height: 100%;
+}
+
+a:any-link{text-decoration: none; color: #3E79A6;}
+a:hover {color:orange; text-decoration: underline;}
+
+
+#pagina {
+    width: 1260px; 
+    height: 1180px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#partearribafija{
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+}
+	
+.header{
+	height: 177px;
+	width: 1260px;
+	background-color: black;
+}
+	
+#partearribafija img{
+	float: left;
+}
+
+#partearribafija h1{
+	display: table-cell;
+	height: 177px;
+	vertical-align: middle;
+    padding-left: 250px;
+	color: white;
+    font-size: 70px;
+}
+
+#partearribafija .menu{
+    position: relative;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+.menu a:any-link{text-decoration: none; color: lightgray;}
+.menu a:hover {color:orange; text-decoration: underline;}
+
+#partearribafija table{
+    width: 100%;
+}
+
+#partearribafija td{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 5px 40px 5px 40px;
+	color:white;
+}
+
+
+
+#contenido{
+	position: relative;
+	top: 220px;
+	width: 100%;
+	text-align: justify;
+}
+
+.izquierda{
+    position: relative;
+	width: 180px;
+	background-color: aqua;
+}
+
+.izquierda img{
+    position: fixed;
+    width: 180px;
+}
+
+.central {
+    float: left;
+	margin-left: 16%;
+	margin-right: 23%;
+	background-color: lightgray;
+}
+
+th{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+	width: 960px;
+}
+
+.central td{
+	padding: 10px;
+	vertical-align:top;
+}
+
+
+.noticia {
+    padding: 20px;
+	border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: darkgray;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fecha{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.fotonoticia {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: darkgray;
+}
+
+.fotonoticia img{
+    width: 150px;
+}
+
+.volver {
+	text-align: right;
+	padding: 10px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+.derecha{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	width: 21%;
+	background-color: #FFFFBE;
+	font-weight: bold;
+    margin-left: 5px;
+}
+
+.derecha td{padding: 10px}
+
+#pie{
+    float:inherit;
+	clear: both;
+    text-align: center;
+	width: 1260px;
+	margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linea1{
+    font-style: italic;
+    font-size: 14pt;
+}
+
+.linea2{
+    font-size: 12pt;
+}
+
+.linea3{
+    font-size: 10pt;
+}
+
+form{
+	padding: 25px;
+}

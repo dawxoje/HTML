@@ -1,0 +1,56 @@
+#orange{
+	background-color:orange;
+	height:20%;
+	left:0%;
+	position:absolute;
+	top:0%;
+	width:100%;	
+}
+#yellow{
+	background-color:yellow;
+	height: 80%;
+	left: 0%;
+	position:absolute;
+	top:20%; 
+	width:100%;
+}
+#green{
+	background-color:green;
+	height:20%;
+	left:0%;
+	position:absolute;
+	top:0%;	
+	width: 20%;
+}
+#blue{
+	background-color:blue;
+	height:20%;
+	position:absolute;
+	right:0%;
+	top: 0%;
+	width:20%;
+
+}
+#purple{
+	background-color:purple;
+	position:absolute;
+	top:80%;
+	left:0%;
+	height:20%;
+	width:100%;
+}
+#red{
+	background-color:red;
+	bottom:0%;
+	height:80%;
+	left:0%;
+	position:absolute;
+	top:20%;
+	width:20%;
+}
+
+.flecha{
+	left:90%;
+	position: fixed;	
+	top:80%;
+}
