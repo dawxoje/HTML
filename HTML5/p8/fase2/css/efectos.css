@@ -1,0 +1,27 @@
+@keyframes vibra{
+    0%{}
+    25%{}
+    50%{}
+    100%{}
+}
+
+.imagen{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /*KeyFrame de izquierda a derecha quedandose en el centro*/
+}
+blockquote{
+    transition: color 3s linear 1s;
+    -webkit-transition: color 3s linear 1s;
+    -moz-transition: color 3s linear 1s;
+    -ms-transition: color 3s linear 1s;
+    -o-transition: color 3s linear 1s;
+}
+blockquote:hover{
+        color:yellow;
+    }
+body>header>h1{
+    border: 5px double black;
+}
+#contenido{
+    background-image:radial-gradient(pink, deeppink, red);
+}
