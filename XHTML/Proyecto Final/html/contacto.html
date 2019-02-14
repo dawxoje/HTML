@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		
+	<head>
+		<link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
+		<title>Contacto</title>
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/contactstyle.css" type="text/css" />
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>De Copas<img src="../img/header2.png" width="300" height="100" alt="" /></h1>
+				
+			</div>
+			
+			<div id="navegacion">
+				<ul>
+					<li><a href="../index.html"><img src="../img/inicio.png" width="30" height="20" alt="fecha_arriba" />Inicio</a></li>
+					<li class="active"><a href="cocktails.html"><img src="../img/cocktail1.png" width="30" height="30" alt="coctel_azul" />Cocktails</a></li>
+					<li><a href="sinalcohol.html"><img src="../img/cocktail2.png" width="30" height="30" alt="coctel_naranja" />Sin alcohol</a></li>
+					<li><a href="bartender.html"><img src="../img/bartender.png" width="30" height="30" alt="figura_barman" />Barman</a></li>	
+					<li><a href="herramientas.html"><img src="../img/herramientas.png" width="30" height="30" alt="coctelera" />Herramientas</a></li>
+					<li><a href="contacto.html"><img src="../img/formulario.png" width="30" height="20" alt="correo" />Contacto</a></li>
+				</ul>
+			</div>
+			
+			<div id="content">
+				<form id="contact_form" class="contact_form" action="http://formularchef.com/Formular-Chef" method="post"/>
+					<p><input type="hidden" name="recipient" value="dawxoje@gmail.com"/></p>
+					<ul>
+						<li><label for="name">Nombre:</label>
+							<input type="text" id="name"/>*</li>
+						<li><label for="name2">Apellidos:</label>
+							<input type="text" id="name2"/>*</li>
+						<li><label for="fecha_dia">Fecha de Nacimiento:</label>
+							<input type="text" size="3" maxlength="2" id="fecha_dia" name="fecha_dia"/>
+							de
+							<select id="fecha_mes" name="fecha_mes">
+								<option value="1">Enero</option>
+								<option value="2">Febrero</option>
+								<option value="3">Marzo</option>
+								<option value="4">Abril</option>
+								<option value="5">Mayo</option>
+								<option value="6">Junio</option>
+								<option value="7">Julio</option>
+								<option value="8">Agosto</option>
+								<option value="9">Septiembre</option>
+								<option value="10">Octubre</option>
+								<option value="11">Noviembre</option>
+								<option value="12">Diciembre</option>
+							</select>
+							de
+							<input type="text" size="5" maxlength="4" id="fecha_ano" name="fecha_ano"/></li>
+						<li><label for="email">E-mail:</label>
+							<input type="text" name="email" id="email"/>*</li>
+						<li><label for="comentario">Comentario:</label> <br />
+							<textarea name="Mensaje" id="comentario" cols="40" rows="6"></textarea>*</li>
+						<li><button  type="submit">Enviar</button>
+							<button  type="reset" name="limpiar">Borrar datos</button></li>
+					</ul>
+			</div>
+			
+			<div id="footer">
+				<p>COPYRIGHT (C) 2018 De Copas.</p>
+			</div>
+		</div>
+	</body>
+</html>

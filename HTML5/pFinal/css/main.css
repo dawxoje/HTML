@@ -1,0 +1,18 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+header>nav>ul{
+    border: 1px solid black;
+}
+header>nav>ul>li{
+    list-style: none;
+    display: inline;
+    border: 1px double black;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: red;
+}

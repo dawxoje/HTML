@@ -1,13 +1,14 @@
 @keyframes vibra{
-    0%{}
-    25%{}
-    50%{}
-    100%{}
+    0%{left: 0%;}
+    25%{left: 100%;}
+    50%{left: 0%;}
+    100%{left: 50%;}
 }
 
 .imagen{
-    animation: name duration timing-function delay iteration-count direction fill-mode;
-    /*KeyFrame de izquierda a derecha quedandose en el centro*/
+    animation: vibra 5s ease-in-out 1s 3;
+    /*KeyFramedeizquierdaaderechaquedandoseenelcentro*/
+    -webkit-animation: vibra 5s ease-in-out 1s 3;
 }
 blockquote{
     transition: color 3s linear 1s;
