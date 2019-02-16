@@ -2,7 +2,7 @@
 color:black;
 }
 
-#header{
+header{
 border:0px black solid;
 margin:10px;
 height:100px;
@@ -12,7 +12,7 @@ font-size:34px;
 font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
-#navegacion{
+nav{
 position:fixed;  
 top:122px;
 left:20px;
@@ -37,7 +37,7 @@ width:850px;
 padding:20px;
 }
 
-#footer{
+footer{
 /*margin:absolute;*/
 text-align:center;
 /*border:1px black solid;*/
@@ -63,7 +63,7 @@ body{
 	background-repeat: no-repeat;*/
 }
 
-#navegacion a:hover {
+nav a:hover {
     background: url('../img/button_hover.png');
     border: 0;
 	width: 184px;
@@ -85,7 +85,7 @@ a:visited {color:white;}
 a:hover, a:focus{text-decoration:underline;}
 /*a:active {color:white;background-color:#d90000;}*/
 
-#navegacion ul {
+nav ul {
     padding        : 0;
     margin-left    : 100px;
     margin-bottom  : auto;
