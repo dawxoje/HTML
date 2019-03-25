@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script>
+        var random=Math.round(Math.random()*100);
+        var userNum,intentos;
+        userNum=0;
+        intentos=0;
+        do {
+            userNum=parseInt(prompt("Introduzca un numero","0-100"));
+            if(userNum<random){
+                alert("Intentalo otra vez con uno mayor JaJa");
+            }
+            if(userNum>random){
+                alert("Intentalo otra vez con uno menor JaJa");
+            }
+            intentos++;
+        } while (userNum!=random);
+    alert("Correcto. Has tardado "+intentos+" intentos");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

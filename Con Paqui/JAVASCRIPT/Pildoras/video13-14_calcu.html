@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script>
+        do {
+            var num1=parseInt(prompt("Introduce el primer nº"));
+            var num2=parseInt(prompt("Introduce el segundo nº"));
+            if(isNaN(num1)||isNaN(num2)){
+                alert("Algo de lo introducido no son cifras")
+            }
+        } while (isNaN(num1)||isNaN(num2));
+                 
+            var operacion=prompt("Introduce una opercion").toLowerCase();
+
+        switch (operacion) {
+            case "suma":
+                alert(num1+num2);
+                break;
+            case "resta":
+                alert(num1-num2);
+                break;
+            case "multiplicacion":
+                alert(num1*num2);
+                break;
+            case "division":
+                alert(num1/num2);
+                break;        
+            default:
+                alert("Opcion no contemplada");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
