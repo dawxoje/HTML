@@ -20,8 +20,7 @@ function insertElement(elemento) {
     var etiqueta=document.createElement(elemento);
     document.body.appendChild(etiqueta);
 }
-function insertSubElement(elemento,elementoPadre) {    
-    
+function insertSubElement(elemento,elementoPadre) {
     insertElementText(elemento,texto);
 }
 function insertElementText(elemento,texto){

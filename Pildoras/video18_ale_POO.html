@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label for="textField"></label><input type="text" name="textField" id="c_mensaje"></td>
+            <td><label for="textField2"></label><input type="text" name="textField2" id="c_intentos "></td>
+        </tr>
+    </table>
+    <script>
+        var random=Math.round(Math.random()*100);
+        var userNum,intentos;
+        userNum=0;
+        intentos=0;
+        var mensaje=document.getElementById("c_mensaje");
+        var intentos_consumidos=document.getElementById("c_intentos");
+        do {
+            userNum=parseInt(prompt("Introduzca un numero","0-100"));
+            if(userNum<random){
+                mensaje.value="Intentalo con uno mayor JaJa";            
+                mensaje.style.fontSize="18px";
+            }
+            if(userNum>random){
+                mensaje.value="Intentalo con uno menor JaJa";            
+                mensaje.style.fontSize="14px";
+            }
+            intentos++;
+            /*intentos_consumidos.value=intentos;
+            intenos_consumidos.style.color="red";
+            intentos_consumidos.style.textAlign="center";*/
+            
+        } while (userNum!=random);
+        mensaje.value="Correcto";
+        mensaje.style.color="red";
+        
+    </script>
+</body>
+</html>
