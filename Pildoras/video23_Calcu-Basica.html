@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calcu OP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script>
+        function sumar(num1,num2) {
+            alert("La suma es :"+(num1+num2));
+        }
+        function restar(num1,num2) {
+            alert("La suma es :"+(num1-num2));
+        }
+        function multiplicar(num1,num2) {
+            alert("La suma es :"+(num1*num2));
+        }
+        function dividir(num1,num2) {
+            alert("La suma es :"+(num1/num2));
+        }
+        seguir=true;
+        do {
+            var operacion=prompt("¿Que operación deseas realizar?")
+            var operador1=parseInt(prompt("Introduce el primer nº "));
+            var operador2=parseInt(prompt("Introduce el segundo nº "));
+
+            switch (operacion) {
+                case "suma":
+                    sumar(operador1,operador2);
+                    break;
+                case "resta":
+                    restar(operador1,operador2);
+                    break;
+                case "multiplicacion":
+                    multiplicar(operador1,operador2);
+                    break;
+                case "division":
+                    dividir(operador1,operador2);
+                    break;        
+                default:
+                    alert("Opcion no contemplada");
+                    break;
+            }
+            seguir=confirm("¿Deseas repetir?");       
+        } while (seguir);
+      </script>
+</head>
+<body>
+     
+</body>
+</html>

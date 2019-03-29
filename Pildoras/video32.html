@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jquery a full</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.miContenedor{
+			background-color: aqua;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			$("#errores h2").html("Hola");
+			
+			$("#errores h2").text("Adios");
+
+			$("#errores").before("<p>Hay errores en el parrafo</p>");
+
+			$("#errores").prepend("<p>Hay errores en el parrafo</p>");
+
+			$("#errores").append("<p>Hay errores en el parrafo</p>");
+			
+			$("#errores").after("<p>Hay errores en el parrafo</p>");
+
+		});
+	</script>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="errores" class="miContenedor">
+			<h2>Errores</h2>
+		</div>
+	</div>
+</body>
+</html>

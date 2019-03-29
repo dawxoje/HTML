@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Try Function JaJa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .centrado{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function dia_de_hoy() {
+            var hoy=new Date();
+            document.write(hoy.toDateString());
+        }
+    </script>
+</head>
+<body class="centrado">
+    <h1><strong>¿Y qué día es hoy?</strong></h1>
+    <p>Hoy es dia: <script>dia_de_hoy();</script> </p>
+    <p>Hemos dicho que hoy es día: <script>dia_de_hoy();</script></p>
+</body>
+</html>

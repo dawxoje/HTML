@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        function validar() {
+            var name_user=document.getElementById("user").value;
+            if (name_user=="") {
+                $("#user").after("Rellena este campo, por favor");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="get">
+        <input type="text" id="user"><br>
+        <input type="text" id="nombre"><br>
+        <input type="text" id="apellido"><br>
+        <input type="button" value="Dale" onclick="validar()">
+    </form>
+</body>
+</html>

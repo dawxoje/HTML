@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>For II JaJa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script>
+        var plantilla=new Array();
+        var trabajador="";
+        var contador=0;
+        while (trabajador!="salir") {
+            trabajador=prompt("Introduce un trabajador");
+            plantilla[contador]=trabajador;
+            contador++;
+        }
+        plantilla.pop();
+        for (var i = 0; i < plantilla.length; i++) {
+            document.write(plantilla[i]+"<br/>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
