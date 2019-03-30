@@ -4,35 +4,58 @@ window.onload=function(){
 }
 
 function creaPagina(){
-    var titulo=document.createElement("h1");
-    var textoTitulo=document.createTextNode("Gaspatxo");
-    document.body.appendChild(titulo);
-    titulo.appendChild(textoTitulo);
+    
+    insertElementText("h1","Gaspatxo");
     
     var marco=document.createElement("img");
     var ruta="./img/gaspatxo.jpg";
     document.body.appendChild(marco);
-    marco.setAttribute("src",ruta);
+    marco.setAttribute("src",ruta);//aqui tambien intente referenciar el mediente getElementsbyTagName[0] y fallo
 
-    var linea=document.createElement("hr");
-    document.body.appendChild(linea);
+    insertElement("hr");
 
-    var subTitulo=document.createElement("h2");
-    var textoSubTitulo=document.createTextNode("Ingredients");
-    document.body.appendChild(subTitulo);
-    subTitulo.appendChild(textoSubTitulo);
-
+    insertElementText("h2","Ingredients");
+    
     var listaDesordenada=document.createElement("ul");
     document.body.appendChild(listaDesordenada);
 
-    var itemLista=document.createElement("li");
-    var contenidoItemLista=document.createTextNode("Tomaca");
-    itemLista.appendChild(contenidoItemLista);
-    listaDesordenada.appendChild(itemLista);
+    var itemLista=[
+        document.createElement("li"),
+        document.createElement("li"),
+        document.createElement("li"),
+        document.createElement("li"),
+        document.createElement("li"),
+        document.createElement("li"),
+        document.createElement("li"),
+        document.createElement("li")
+    ]
+    var contenidoItemLista=[
+        document.createTextNode("Tomaca"),
+        document.createTextNode("Pebrot verd"),
+        document.createTextNode("Cogombre"),
+        document.createTextNode("All"),
+        document.createTextNode("Oli"),
+        document.createTextNode("Vinagre"),
+        document.createTextNode("Sal"),
+        document.createTextNode("Aigua")
+    ]
+    appendLI(0);
+    appendLI(1);
+    appendLI(2);
+    appendLI(3);
+    appendLI(4);
+    appendLI(5);
+    appendLI(6);
+    appendLI(7);
+    /*for (var i = 0; i < itemList.length; i++) {
+        appendLI(i);  Porque esto no va?==???
+    }*/
 
-    contenidoItemLista=document.createTextNode("Pebrot verd");
-    itemLista.appendChild(contenidoItemLista);
-    listaDesordenada.appendChild(itemLista);
+    function appendLI(num) {
+        itemLista[num].appendChild(contenidoItemLista[num]);
+        /*Aqui intente referenciar ul mediente getElementsbyTagName[0] y fallo*/
+        listaDesordenada.appendChild(itemLista[num]);
+    }
     /*insertElementText("h1","Gaspatxo");
     insertElementImagen("./img/gaspatxo.jpg");
     insertElement("hr");
@@ -42,21 +65,28 @@ function creaPagina(){
 }
 
 function creaEstilos(){
-    
+    var cuerpoStyle=document.body.style;
+    cuerpoStyle.content
+    cuerpoStyle.border="20px solid blue";
+    cuerpoStyle.backgroundColor="grey";
 }
-/*
+
 function insertElement(elemento) {
     var etiqueta=document.createElement(elemento);
     document.body.appendChild(etiqueta);
 }
-function insertSubElement(elemento,elementoPadre) {
-    insertElementText(elemento,texto);
-}
 function insertElementText(elemento,texto){
-    insertElement(elemento);
+    /*Aqui intente llamar a insertElement pero me daba fallo*/
+    var etiqueta=document.createElement(elemento);
+    document.body.appendChild(etiqueta);
     var contenido=document.createTextNode(texto);
     etiqueta.appendChild(contenido);
 }
+/*
+function insertSubElement(elemento,elementoPadre) {
+    insertElementText(elemento,texto);
+}
+
 function insertElementImagen(path) {
     insertElement("img");
     var ruta=path;
