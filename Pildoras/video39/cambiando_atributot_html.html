@@ -14,6 +14,7 @@ table{
 
 img{
 	padding:0 5px;
+  	filter:opacity(.5);
 }
 h1{
 	text-align:center;
@@ -23,8 +24,15 @@ h1{
 <script src="Jquery/jquery-1.6.3.min.js"></script>
 
 <script>
-
-	
+	$(document).ready(function(){
+		var imagenes=document.querySelectorAll("img");
+		for(var i=0; i<imagenes.length; i++){
+			imagenes[i].addEventListener("mouseover",cambiar,false);
+		}
+	});
+	function cambiar(e) {
+		$("img").attr("src","../vide39.jpg");
+	}
 
 </script>
 </head>
@@ -33,10 +41,10 @@ h1{
 <h1>Galería de imágenes</h1>
 <table width="100%" border="0">
   <tr>
-    <td><img src="imgs/imgs2/1.jpg" id="img1" ></td>
-    <td><img src="imgs/imgs2/2.jpg" id="img2" ></td>
-    <td><img src="imgs/imgs2/3.jpg" id="img3" ></td>
-    <td><img src="imgs/imgs2/4.jpg" id="img4" ></td>
+    <td><img src="../vide39.jpg" width="250" height="200" id="img1" ></td>
+    <td><img src="../video24.jpg" width="250" height="200" id="img2" ></td>
+    <td><img src="../vide39.jpg" width="250" height="200" id="img3" ></td>
+    <td><img src="../video24.jpg" width="250" height="200" id="img4" ></td>
   </tr>
 </table>
 </body>
