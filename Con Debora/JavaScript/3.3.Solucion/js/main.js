@@ -8,8 +8,10 @@ function creaPagina(){
     insertElementText("h1","Gaspatxo");
     
     var marco=document.createElement("img");
+    var figura=document.createElement("figure");
     var ruta="./img/gaspatxo.jpg";
-    document.body.appendChild(marco);
+    figura.appendChild(marco);
+    document.body.appendChild(figura);
     marco.setAttribute("src",ruta);//aqui tambien intente referenciar el mediente getElementsbyTagName[0] y fallo
 
     insertElement("hr");
@@ -66,9 +68,44 @@ function creaPagina(){
 
 function creaEstilos(){
     var cuerpoStyle=document.body.style;
-    cuerpoStyle.content
+    cuerpoStyle.margin="25%";
     cuerpoStyle.border="20px solid blue";
     cuerpoStyle.backgroundColor="grey";
+
+    var titutoStyle=document.querySelector("h1").style;
+    titutoStyle.textDecoration="underline";
+    titutoStyle.backgroundColor="white";
+    titutoStyle.border="1px solid red";
+    titutoStyle.height="60px";
+    titutoStyle.width="50%";
+    titutoStyle.marginLeft="10%";
+    titutoStyle.padding="15px";
+    titutoStyle.paddingLeft="30%";
+
+    var figuraStyle=document.querySelector("figure").style;
+    figuraStyle.backgroundColor="white";
+    figuraStyle.width="310px";
+    figuraStyle.height="200px";
+    figuraStyle.paddingLeft="25px";
+    figuraStyle.paddingTop="10px";
+    figuraStyle.border="1px solid red";
+
+    var subTituloStyle=document.querySelector("h2").style.display="none";
+
+    var listaDesordenadaStyle=document.querySelector("ul").style;
+    listaDesordenadaStyle.backgroundColor="yellow";
+    listaDesordenadaStyle.border="1px solid red";
+    listaDesordenadaStyle.height="150px";
+    listaDesordenadaStyle.width="150px";
+    listaDesordenadaStyle.marginLeft="25%";
+    listaDesordenadaStyle.paddingTop="10px";
+
+    var primerIngredienteStyle=document.querySelectorAll("li")[0].style;
+    primerIngredienteStyle.color="Red";
+    primerIngredienteStyle.fontWeight="Bold";
+    var ultimoIngredienteStyle=document.querySelectorAll("li")[document.querySelectorAll("li").length-1].style;
+    ultimoIngredienteStyle.color="Blue";
+    ultimoIngredienteStyle.fontWeight="Bold";
 }
 
 function insertElement(elemento) {

@@ -1,0 +1,19 @@
+/* EXERCICI BOM */
+En la pàgina hi ha 2 botons:
+
+Primer botó: demanar a l'usuari si vol canviar de pàgina amb un confirm
+
+	Si Accepta, mostrar un missatge en un element p de la pàgina indicant que serà redirigit.
+			Redirigir la pàgina actual a una altra url quan passen 3 segons.
+			
+	Si Cancela, mostrar un missatge en un element p de la pàgina confirmant que es queda
+	
+Segon botó: Obrir una altra url en una finestra nova del navegador.
+
+/* Javascript Diàleg Confirm */
+var valor = confirm("Text de la pregunta del diàleg a confirmar");
+	if (valor == true) {
+		/* Codi a executar si s'ha triat Acceptar */		
+	} else {
+		/* Codi a executar si s'ha triat Cancel·lar */
+	}
